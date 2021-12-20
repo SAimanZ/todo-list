@@ -12,7 +12,9 @@ const InputField = ({ addText, text, selected, addTodo }) => {
         value: text,
         selected: selected
       });
-    else addTodo(text);
+
+    else if (text!="" )
+     addTodo(text);
   };
   return (
     <form onSubmit={handleSubmit}>
